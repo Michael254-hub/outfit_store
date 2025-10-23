@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
-        android:text="@string/sign_up"
+        android:text="@string/signup"
         android:textColor="@color/text_heading"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -29,8 +29,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="210dp"
+        android:autofillHints=""
         android:background="@drawable/edit_text_bg"
         android:hint="@string/name"
+        android:inputType="TODO"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +40,7 @@
         app:layout_constraintWidth_percent=".8"
         android:drawablePadding="10dp"
         android:elevation="3dp"
-        android:drawableLeft="@drawable/ic_baseline_person_24" />
+        android:drawableStart="@drawable/ic_baseline_person_24" />
 
 
     <EditText
@@ -46,6 +48,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
+        android:autofillHints=""
         android:background="@drawable/edit_text_bg"
         android:hint="@string/email"
         android:padding="15dp"
@@ -55,7 +58,7 @@
         app:layout_constraintWidth_percent=".8"
         android:drawablePadding="10dp"
         android:elevation="3dp"
-        android:drawableLeft="@drawable/ic_baseline_account_circle" />
+        android:drawableStart="@drawable/ic_baseline_account_circle" />
 
 
     <EditText
@@ -73,22 +76,49 @@
         app:layout_constraintWidth_percent=".8"
         android:drawablePadding="10dp"
         android:elevation="3dp"
-        android:drawableLeft="@drawable/ic_baseline_vpn_key_24" />
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24" />
 
     <Button
-        app:layout_constraintWidth_percent=".4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:onClick="signup"
-        android:text="@string/sign_up"
         android:padding="15dp"
+        android:text="@string/signup"
         android:textAllCaps="false"
         android:textStyle="bold"
-        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-         />
+        app:layout_constraintVertical_bias="0.107"
+        app:layout_constraintWidth_percent=".4"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:text="@string/don_t_have_an_account"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="@+id/password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:onClick="sign_in"
+        android:text="@string/sign_in"
+        android:textColor="@color/pink"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="@+id/password" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

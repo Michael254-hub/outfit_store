@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,13 @@ public class RegistrationActivity extends AppCompatActivity {
             return insets;
         });
     }
-    public void signup(View view) {}
+
+    public void signup(View view) {
+        startActivity(new Intent(RegistrationActivity.this,MainActivity.class));
+    }
+
+    public void sign_in(View view){
+        startActivity(new Intent(RegistrationActivity.this,LoginActivity.class));
+    }
+
+}
