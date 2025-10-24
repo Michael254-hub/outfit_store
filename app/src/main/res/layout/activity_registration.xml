@@ -32,7 +32,7 @@
         android:autofillHints=""
         android:background="@drawable/edit_text_bg"
         android:hint="@string/name"
-        android:inputType="TODO"
+        android:inputType="text"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,6 +51,7 @@
         android:autofillHints=""
         android:background="@drawable/edit_text_bg"
         android:hint="@string/email"
+        android:inputType="textEmailAddress"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +67,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
+        android:autofillHints=""
         android:background="@drawable/edit_text_bg"
         android:hint="@string/password"
         android:inputType="numberPassword"
@@ -79,6 +81,7 @@
         android:drawableStart="@drawable/ic_baseline_vpn_key_24" />
 
     <Button
+        android:backgroundTint="@color/pink"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:onClick="signup"
@@ -99,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="200dp"
-        android:text="@string/don_t_have_an_account"
+        android:text="@string/already_have_an_account"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/password"
@@ -117,7 +120,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="@+id/password" />
 
 

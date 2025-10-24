@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -24,5 +25,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void signup(View view) {
+        startActivity(new Intent(LoginActivity.this,RegistrationActivity.class));
+    }
+
+    public void sign_in(View view) {
+        startActivity(new Intent(LoginActivity.this,MainActivity.class));
     }
 }
