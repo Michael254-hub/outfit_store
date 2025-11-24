@@ -12,5 +12,6 @@
     <string name="already_have_an_account">Already Have An Account?</string>
     <string name="sign_in">Sign In</string>
     <string name="login">Login</string>
+    <string name="lets_get_started">Lets get started</string>
 
 </resources>
